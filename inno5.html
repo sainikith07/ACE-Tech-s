@@ -1,0 +1,301 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a class="active" href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/inno6.jpeg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h1>Movie app</h1>
+                        <p>
+                          Review your movie
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <h1>source code for Practice</h1>
+                <section id="code">
+                    <h2>HTML Code:</h2>
+                    <pre>
+                        <code class="codehtml">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Movie App&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;form id="form"&gt;
+        &lt;input type="text" id="search" class="search" placeholder="Search"&gt;
+      &lt;/form&gt;
+    &lt;/header&gt;
+    &lt;main id="main"&gt;&lt;/main&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                    <h2>CSS Code:</h2>
+                    <pre>
+                        <code class="codecss">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+                        </code>
+                    </pre>
+                    <h2>JavaScript</h2>
+                    <pre>
+                        <code class="codecss">
+const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1'
+const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
+const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="'
+
+const main = document.getElementById('main')
+const form = document.getElementById('form')
+const search = document.getElementById('search')
+
+// Get initial movies
+getMovies(API_URL)
+
+async function getMovies(url) {
+    const res = await fetch(url)
+    const data = await res.json()
+
+    showMovies(data.results)
+}
+
+function showMovies(movies) {
+    main.innerHTML = ''
+
+    movies.forEach((movie) =&gt; {
+        const { title, poster_path, vote_average, overview } = movie
+
+        const movieEl = document.createElement('div')
+        movieEl.classList.add('movie')
+
+        movieEl.innerHTML = `
+            &lt;img src="${IMG_PATH + poster_path}" alt="${title}"&gt;
+            &lt;div class="movie-info"&gt;
+          &lt;h3&gt;${title}&lt;/h3&gt;
+          &lt;span class="${getClassByRate(vote_average)}"&gt;${vote_average}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="overview"&gt;
+          &lt;h3&gt;Overview&lt;/h3&gt;
+          ${overview}
+        &lt;/div&gt;
+        `
+        main.appendChild(movieEl)
+    })
+}
+
+function getClassByRate(vote) {
+    if(vote &gt;= 8) {
+        return 'green'
+    } else if(vote &gt;= 5) {
+        return 'orange'
+    } else {
+        return 'red'
+    }
+}
+
+form.addEventListener('submit', (e) =&gt; {
+    e.preventDefault()
+
+    const searchTerm = search.value
+
+    if(searchTerm && searchTerm !== '') {
+        getMovies(SEARCH_API + searchTerm)
+
+        search.value = ''
+    } else {
+        window.location.reload()
+    }
+})
+                        </code>
+                    </pre>
+                </section>
+                
+            </div>
+        </section>
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script> 
+    </body>
+</html>

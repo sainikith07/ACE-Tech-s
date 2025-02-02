@@ -1,0 +1,95 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a class="active" href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/projstater.jpg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h1>Content placeholder</h1>
+                        <p>
+                            info
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <h1>source code for Practice</h1>
+                <section id="code">
+                    <h2>HTML Code:</h2>
+                    <img class="code-img" src="images/ino1ht.png" alt="">
+                    <h2>CSS Code:</h2>
+                    <img class="code-img" src="images/ino1cs.png" alt="">
+                </section>
+                
+            </div>
+        </section>
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,298 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a class="active" href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/ino4.jpeg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h1>Drink water</h1>
+                        <p>
+                          Fill up the Bottle
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <h1>source code for Practice</h1>
+                <section id="code">
+                    <h2>HTML Code:</h2>
+                    <pre>
+                        <code class="codehtml">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Drink Water&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Drink Water&lt;/h1&gt;
+    &lt;h3&gt;Goal: 2 Liters&lt;/h3&gt;
+
+    &lt;div class="cup"&gt;
+      &lt;div class="remained" id="remained"&gt;
+        &lt;span id="liters"&gt;&lt;/span&gt;
+        &lt;small&gt;Remained&lt;/small&gt;
+      &lt;/div&gt;
+
+      &lt;div class="percentage" id="percentage"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p class="text"&gt;Select how many glasses of water that you have drank&lt;/p&gt;
+
+    &lt;div class="cups"&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+      &lt;div class="cup cup-small"&gt;250 ml&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                    <h2>CSS Code:</h2>
+                    <pre>
+                        <code class="codecss">
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  height: 95px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+                        </code>
+                    </pre>
+                    <h2>JavaScript</h2>
+                    <pre>
+                        <code class="codecss">
+const smallCups = document.querySelectorAll('.cup-small')
+const liters = document.getElementById('liters')
+const percentage = document.getElementById('percentage')
+const remained = document.getElementById('remained')
+
+updateBigCup()
+
+smallCups.forEach((cup, idx) =&gt; {
+    cup.addEventListener('click', () =&gt; highlightCups(idx))
+})
+
+function highlightCups(idx) {
+    if (idx===7 && smallCups[idx].classList.contains("full")) idx--;
+    else if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
+        idx--
+    }
+
+    smallCups.forEach((cup, idx2) =&gt; {
+        if(idx2 &lt;= idx) {
+            cup.classList.add('full')
+        } else {
+            cup.classList.remove('full')
+        }
+    })
+
+    updateBigCup()
+}
+
+function updateBigCup() {
+    const fullCups = document.querySelectorAll('.cup-small.full').length
+    const totalCups = smallCups.length
+
+    if(fullCups === 0) {
+        percentage.style.visibility = 'hidden'
+        percentage.style.height = 0
+    } else {
+        percentage.style.visibility = 'visible'
+        percentage.style.height = `${fullCups / totalCups * 330}px`
+        percentage.innerText = `${fullCups / totalCups * 100}%`
+    }
+
+    if(fullCups === totalCups) {
+        remained.style.visibility = 'hidden'
+        remained.style.height = 0
+    } else {
+        remained.style.visibility = 'visible'
+        liters.innerText = `${2 - (250 * fullCups / 1000)}L`
+    }
+}
+
+                        </code>
+                    </pre>
+                </section>
+                
+            </div>
+        </section>
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script> 
+    </body>
+</html>

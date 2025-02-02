@@ -1,0 +1,319 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a class="active" href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/inno2.jpeg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h1>Clock</h1>
+                        <p>
+                          Design a Digital clock
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <h1>source code for Practice</h1>
+                <section id="code">
+                    <h2>HTML Code:</h2>
+                    <pre>
+                        <code class="codehtml">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Theme Clock&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button class="toggle"&gt;Dark mode&lt;/button&gt;
+    &lt;div class="clock-container"&gt;
+      &lt;div class="clock"&gt;
+        &lt;div class="needle hour"&gt;&lt;/div&gt;
+        &lt;div class="needle minute"&gt;&lt;/div&gt;
+        &lt;div class="needle second"&gt;&lt;/div&gt;
+        &lt;div class="center-point"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="time"&gt;&lt;/div&gt;
+      &lt;div class="date"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+
+
+                    <h2>CSS Code:</h2>
+                    <pre>
+                        <code class="codecss">
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html {
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point::after {
+  content: '';
+  background-color: var(--primary-color);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 60px;
+}
+
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}
+
+                        </code>
+                    </pre>
+                    <h2>JavaScript:</h2>
+                    <pre>
+                        <code class="codecss">
+const hourEl = document.querySelector('.hour')
+const minuteEl = document.querySelector('.minute')
+const secondEl = document.querySelector('.second')
+const timeEl = document.querySelector('.time')
+const dateEl = document.querySelector('.date')
+const toggle = document.querySelector('.toggle')
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+toggle.addEventListener('click', (e) =&gt; {
+    const html = document.querySelector('html')
+    if (html.classList.contains('dark')) {
+        html.classList.remove('dark')
+        e.target.innerHTML = 'Dark mode'
+    } else {
+        html.classList.add('dark')
+        e.target.innerHTML = 'Light mode'
+    }
+})
+
+function setTime() {
+    const time = new Date();
+    const month = time.getMonth()
+    const day = time.getDay()
+    const date = time.getDate()
+    const hours = time.getHours()
+    const hoursForClock = hours &gt;= 13 ? hours % 12 : hours;
+    const minutes = time.getMinutes()
+    const seconds = time.getSeconds()
+    const ampm = hours &gt;= 12 ? 'PM' : 'AM'
+
+    hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 12, 0, 360)}deg)`
+    minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 60, 0, 360)}deg)`
+    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 60, 0, 360)}deg)`
+
+    timeEl.innerHTML = `${hoursForClock}:${minutes &lt; 10 ? `0${minutes}` : minutes} ${ampm}`
+    dateEl.innerHTML = `${days[day]}, ${months[month]} &lt;span class="circle"&gt;${date}&lt;/span&gt;`
+}
+
+// StackOverflow https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+const scale = (num, in_min, in_max, out_min, out_max) =&gt; {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+setTime()
+
+setInterval(setTime, 1000)
+
+                        </code>
+                    </pre>
+                </section>
+                
+            </div>
+        </section>
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script> 
+    </body>
+</html>

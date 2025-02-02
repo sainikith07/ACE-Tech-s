@@ -1,0 +1,1022 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="courses.html">Courses</a></li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/css.jpg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h2>CSS</h2>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comc">
+                            <pre>
+                                <code class="comcin">
+                            <h3>What is CSS?</h3>
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+CSS Demo - One HTML Page - Multiple Styles!
+Here we will show one HTML page displayed with four different stylesheets. 
+Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4"
+
+                                </code>
+                            </pre>
+                            
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <h3>Faculy</h3>
+                <div class="tutor">
+                  <img src="images/younos.jpeg" alt="">
+                  <div class="tutor-det">
+                 <h6>Md Younus Shariff</h6>
+                 <p>
+                  Designation: Assistant Professor
+                  <br>Qualification: M.Tech
+                  <br>Experiance:	10 Years
+                  <br>Research Interests:	Machine Learning</p>
+                  </div>
+
+                </div>
+                <hr>
+                <div class="comc">
+                    <pre>
+                        <code class="comcin">
+CSS is the language we use to style a Web page.
+
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+CSS Demo - One HTML Page - Multiple Styles!
+Here we will show one HTML page displayed with four different stylesheets. 
+Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4"
+
+CSS Solved a Big Problem
+HTML was NEVER intended to contain tags for formatting a web page!
+
+HTML was created to describe the content of a web page, like:
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, 
+it started a nightmare for web developers. Development of large websites, 
+where fonts and color information were added to every single page, 
+became a long and expensive process.
+
+To solve this problem, the World Wide Web Consortium  created CSS.
+
+CSS removed the style formatting from the HTML page!
+
+
+Example Explained
+p is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).
+color is a property, and red is the property value
+text-align is a property, and center is the property value
+
+CSS Selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+This page will explain the most basic CSS selectors.
+
+The CSS element Selector
+The element selector selects HTML elements based on the element name.
+
+Example
+Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color: 
+
+p {
+  text-align: center;
+  color: red;
+}
+The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+Example
+The CSS rule below will be applied to the HTML element with id="para1": 
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+Note: An id name cannot start with a number!
+
+
+The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+Example
+In this example all HTML elements with class="center" will be red and center-aligned: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+You can also specify that only specific HTML elements should be affected by a class.
+
+Example
+In this example only &lt;p&gt; elements with class="center" will be red and center-aligned: 
+
+p.center {
+  text-align: center;
+  color: red;
+}
+HTML elements can also refer to more than one class.
+
+Example
+In this example the &lt;p&gt; element will be styled according to class="center" and to class="large": 
+
+&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;
+Note: A class name cannot start with a number!
+
+The CSS Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+
+Example
+The CSS rule below will affect every HTML element on the page: 
+
+* {
+  text-align: center;
+  color: blue;
+}
+The CSS Grouping Selector
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+It will be better to group the selectors, to minimize the code.
+
+To group selectors, separate each selector with a comma.
+
+Example
+In this example we have grouped the selectors from the code above: 
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+External CSS
+With an external style sheet, you can change the look of an entire website by changing 
+just one file!
+
+Each HTML page must include a reference to the external style sheet file inside 
+the &lt;link&gt; element, inside the head section.
+
+Example
+External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; 
+section of an HTML page:
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+An external style sheet can be written in any text editor, and must be saved with a 
+.css extension.
+
+The external .css file should not contain any HTML tags.
+
+Here is how the "mystyle.css" file looks:
+
+"mystyle.css"
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+Note: Do not add a space between the property value (20) and the unit (px):
+Incorrect (space): margin-left: 20 px;
+Correct (no space): margin-left: 20px;
+
+ADVERTISEMENT
+
+Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the &lt;style&gt; element, inside the head section.
+
+Example
+Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; 
+section of an HTML page:
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Inline CSS
+An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. 
+The style attribute can contain any CSS property.
+
+Example
+Inline styles are defined within the "style" attribute of the relevant element:
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Tip: An inline style loses many of the advantages of a style sheet 
+(by mixing content with presentation). Use this method sparingly.
+
+Multiple Style Sheets
+If some properties have been defined for the same selector (element) 
+in different style sheets, the value from the last read style sheet will be used. 
+
+Assume that an external style sheet has the following style for the &lt;h1&gt; element:
+
+h1 {
+  color: navy;
+}
+Then, assume that an internal style sheet also has the following style 
+for the &lt;h1&gt; element:
+
+h1 {
+  color: orange;   
+}
+Example
+If the internal style is defined after the link to the external style sheet, 
+the &lt;h1&gt; elements will be "orange":
+
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;style&gt;
+h1 {
+  color: orange;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+Example
+However, if the internal style is defined before the link to the external style sheet, 
+the &lt;h1&gt; elements will be "navy": 
+
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  color: orange;
+}
+&lt;/style&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;
+Cascading Order
+What style will be used when there is more than one style specified for an HTML element?
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the 
+following rules, where number one has the highest priority:
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+So, an inline style has the highest priority, and will override external and 
+internal styles and browser defaults.
+
+CSS Text Color
+You can set the color of text:
+
+Hello World
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+lobortis nisl ut aliquip ex ea commodo consequat.
+
+Example
+&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;
+
+
+The CSS background properties are used to add background effects for elements.
+
+In these chapters, you will learn about the following CSS background properties:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+CSS background-color
+The background-color property specifies the background color of an element.
+
+Example
+The background color of a page is set like this:
+
+body {
+  background-color: lightblue;
+}
+With CSS, a color is most often specified by:
+
+a valid color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+Other Elements
+You can set the background color for any HTML elements:
+
+Example
+Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different 
+background colors: 
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+ADVERTISEMENT
+
+Opacity / Transparency
+The opacity property specifies the opacity/transparency of an element. 
+It can take a value from 0.0 - 1.0.
+
+
+CSS Border Style
+The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+The border-style property can have from one to four values 
+(for the top border, right border, bottom border, and the left border).
+
+CSS Margins
+The CSS margin properties are used to create space around elements, 
+outside of any defined borders.
+
+With CSS, you have full control over the margins. There are properties for 
+setting the margin for each side of an element (top, right, bottom, and left).
+
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+All the margin properties can have the following values:
+
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+Tip: Negative values are allowed.
+
+Example
+Set different margins for all four sides of a &lt;p&gt; element:
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+
+CSS Padding
+The CSS padding properties are used to generate space around an element's content, 
+inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting 
+the padding for each side of an element (top, right, bottom, and left).
+
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+All the padding properties can have the following values:
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element
+Note: Negative values are not allowed.
+
+Example
+Set different padding for all four sides of a &lt;div&gt; element:  
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+The CSS height and width properties are used to set the height and width of an element.
+
+The CSS max-width property is used to set the maximum width of an element.
+
+This element has a height of 50 pixels and a width of 100%.
+
+CSS Setting height and width
+The height and width properties are used to set the height and width of an element.
+
+The height and width properties do not include padding, borders, or margins. 
+It sets the height/width of the area inside the padding, border, and margin of the element.
+
+CSS height and width Values
+The height and width properties may have the following values:
+
+auto - This is default. The browser calculates the height and width
+length - Defines the height/width in px, cm, etc.
+% - Defines the height/width in percent of the containing block
+initial - Sets the height/width to its default value
+inherit - The height/width will be inherited from its parent value
+CSS height and width Examples
+This element has a height of 200 pixels and a width of 50%
+Example
+Set the height and width of a &lt;div&gt; element:
+
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+
+This element has a height of 100 pixels and a width of 500 pixels.
+Example
+Set the height and width of another &lt;div&gt; element:
+
+div {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+
+The CSS Box Model
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: margins, borders, padding, and the actual content. 
+
+
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+CSS has the following outline properties:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+Text Color
+The color property is used to set the color of the text. The color is specified by:
+
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+The default text color for a page is defined in the body selector.
+
+Font Selection is Important
+Choosing the right font has a huge impact on how the readers experience a website.
+
+The right font can create a strong identity for your brand.
+
+Using a font that is easy to read is important. The font adds value to your text. 
+It is also important to choose the correct color and text size for the font.
+
+Generic Font Families
+In CSS there are five generic font families:
+
+Serif fonts have a small stroke at the edges of each letter. 
+They create a sense of formality and elegance.
+Sans-serif fonts have clean lines (no small strokes attached). 
+They create a modern and minimalistic look.
+Monospace fonts - here all the letters have the same fixed width. 
+They create a mechanical look. 
+Cursive fonts imitate human handwriting.
+Fantasy fonts are decorative/playful fonts.
+All the different font names belong to one of the generic font families. 
+
+How To Add Icons
+The simplest way to add an icon to your HTML page, is with an icon library, 
+such as Font Awesome.
+
+Add the name of the specified icon class to any inline HTML element 
+(like &lt;i&gt; or &lt;span&gt;).
+
+All the icons in the icon libraries below, are scalable vectors that can be 
+customized with CSS (size, color, shadow, etc.)
+
+Font Awesome Icons
+To use the Font Awesome icons, go to fontawesome.com, sign in, and get a 
+code to add in the &lt;head&gt; section of your HTML page:
+
+&lt;script src="https://kit.fontawesome.com/yourcode.js" 
+crossorigin="anonymous"&gt;&lt;/script&gt;
+
+Read more about how to get started with Font Awesome in our Font Awesome 5 tutorial.
+
+Note: No downloading or installation is required!
+
+In addition, links can be styled differently depending on what state they are in.
+
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+HTML Lists and CSS List Properties
+In HTML, there are two main types of lists:
+
+unordered lists (&lt;ul&gt;) - the list items are marked with bullets
+ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters
+The CSS list properties allow you to:
+
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+Different List Item Markers
+The list-style-type property specifies the type of list item marker.
+
+
+Table Borders
+To specify table borders in CSS, use the border property.
+
+The example below specifies a solid border for &lt;table&gt;, &lt;th&gt;, and 
+&lt;td&gt; elements:
+
+The display Property
+The display property specifies if/how an element is displayed.
+
+Every HTML element has a default display value depending on what type of element it is. 
+The default display value for most elements is block or inline.
+
+Block-level Elements
+A block-level element always starts on a new line and takes up the full width available 
+(stretches out to the left and right as far as it can).
+
+The &lt;div&gt; element is a block-level element.
+Examples of block-level elements:
+
+&lt;div&gt;
+&lt;h1&gt; - &lt;h6&gt;
+&lt;p&gt;
+&lt;form&gt;
+&lt;header&gt;
+&lt;footer&gt;
+&lt;section&gt;
+Inline Elements
+An inline element does not start on a new line and only takes up as much width as necessary.
+
+This is an inline &lt;span&gt; element inside a paragraph.
+
+Examples of inline elements:
+
+&lt;span&gt;
+&lt;a&gt;
+&lt;img&gt;
+Display: none;
+display: none; is commonly used with JavaScript to hide and show elements without deleting 
+and recreating them. Take a look at our last example on this page if you want to know 
+how this can be achieved.
+
+The &lt;script&gt; element uses display: none; as default. 
+
+Override The Default Display Value
+As mentioned, every element has a default display value. However, you can override this.
+
+Changing an inline element to a block element, or vice versa, 
+can be useful for making the page look a specific way, and still follow the web standards.
+
+A common example is making inline &lt;li&gt; elements for horizontal menus:
+
+Example
+li {
+  display: inline;
+}
+Note: Setting the display property of an element only changes how the element is displayed, 
+NOT what kind of element it is. So, an inline element with display: block; 
+is not allowed to have other block elements inside it.
+
+Using width, max-width and margin: auto;
+As mentioned in the previous chapter; a block-level element always takes up the 
+full width available (stretches out to the left and right as far as it can).
+
+Setting the width of a block-level element will prevent it from stretching out to 
+the edges of its container. Then, you can set the margins to auto, to horizontally 
+center the element within its container. The element will take up the specified width, 
+and the remaining space will be split equally between the two margins:
+
+This &lt;div&gt; element has a width of 500px, and margin set to auto.
+
+Note: The problem with the &lt;div&gt; above occurs when the browser window is 
+smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.
+
+Using max-width instead, in this situation, will improve the browser's handling 
+of small windows. This is important when making a site usable on small devices:
+
+This &lt;div&gt; element has a max-width of 500px, and margin set to auto.
+
+Tip: Resize the browser window to less than 500px wide, to see the difference 
+between the two divs!
+
+Here is an example of the two divs above:
+
+Example
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+The position property specifies the type of positioning method used for an element 
+(static, relative, fixed, absolute or sticky).
+
+The position Property
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+Elements are then positioned using the top, bottom, left, and right properties. 
+However, these properties will not work unless the position property is set first. 
+They also work differently depending on the position value.
+
+position: static;
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; 
+it is always positioned according to the normal flow of the page:
+
+This &lt;div&gt; element has position: static;
+Here is the CSS that is used:
+
+Example
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+position: relative;
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned 
+element will cause it to be adjusted away from its normal position. Other content 
+will not be adjusted to fit into any gap left by the element.
+
+This &lt;div&gt; element has position: relative;
+Here is the CSS that is used:
+
+Example
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+position: fixed;
+An element with position: fixed; is positioned relative to the viewport, 
+which means it always stays in the same place even if the page is scrolled. 
+The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+Example
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+This &lt;div&gt; element has position: fixed;
+position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor 
+(instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, 
+it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Here is a simple example:
+
+This &lt;div&gt; element has position: relative;This &lt;div&gt; element has position: absolute;
+Here is the CSS that is used:
+
+Example
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. 
+It is positioned relative until a given offset position is met in the viewport - then it 
+"sticks" in place (like position:fixed).
+
+
+Note: Internet Explorer does not support sticky positioning. Safari requires 
+a -webkit- prefix (see example below). You must also specify at least one of 
+top, right, bottom or left for sticky positioning to work.
+
+In this example, the sticky element sticks to the top of the page (top: 0), 
+when you reach its scroll position.
+
+Example
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+There are tons of different layout designs to choose from. However, 
+the structure above, is one of the most common, 
+and we will take a closer look at it in this tutorial.
+
+Header
+A header is usually located at the top of the website (or right below a top navigation menu). 
+It often contains a logo or the website name:
+
+Example
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+Content
+The layout in this section, often depends on the target users. 
+The most common layout is one (or combining them) of the following:
+
+1-column (often used for mobile browsers)
+2-column (often used for tablets and laptops)
+3-column layout (only used for desktops)
+
+
+CSS Units
+CSS has several different units for expressing a length.
+
+Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+
+Length is a number followed by a length unit, such as 10px, 2em, etc.
+
+Example
+Set different length values, using px (pixels):
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+Note: A whitespace cannot appear between the number and the unit. However, 
+if the value is 0, the unit can be omitted.
+
+For some CSS properties, negative lengths are allowed.
+
+There are two types of length units: absolute and relative.
+
+Absolute Lengths
+The absolute length units are fixed and a length expressed in any of these will 
+appear as exactly that size.
+
+Absolute length units are not recommended for use on screen, 
+because screen sizes vary so much. However, 
+they can be used if the output medium is known, such as for print layout.
+
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+* Pixels (px) are relative to the viewing device. 
+For low-dpi devices, 1px is one device pixel (dot) of the display. 
+For printers and high resolution screens 1px implies multiple device pixels.
+
+Relative Lengths
+Relative length units specify a length relative to another length property. 
+Relative length units scale better between different rendering mediums.
+
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element	
+Tip: The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+ 
+        
+        
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script>
+
+         
+
+
+
+
+
+    </body>
+</html>

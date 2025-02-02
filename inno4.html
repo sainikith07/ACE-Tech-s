@@ -1,0 +1,319 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a class="active" href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/inno5.jpeg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h1>password generate</h1>
+                        <p>
+                          Generate your strong password
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <h1>source code for Practice</h1>
+                <section id="code">
+                    <h2>HTML Code:</h2>
+                    <pre>
+                        <code class="codehtml">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Password Generator&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h2&gt;Password Generator&lt;/h2&gt;
+      &lt;div class="result-container"&gt;
+        &lt;span id="result"&gt;&lt;/span&gt;
+        &lt;button class="btn" id="clipboard"&gt;
+          &lt;i class="far fa-clipboard"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="settings"&gt;
+        &lt;div class="setting"&gt;
+          &lt;label&gt;Password Length&lt;/label&gt;
+          &lt;input type="number" id="length" min="4" max="20" value="20"&gt;
+        &lt;/div&gt;
+        &lt;div class="setting"&gt;
+          &lt;label&gt;Include uppercase letters&lt;/label&gt;
+          &lt;input type="checkbox" id="uppercase" checked&gt;
+        &lt;/div&gt;
+        &lt;div class="setting"&gt;
+          &lt;label&gt;Include lowercase letters&lt;/label&gt;
+          &lt;input type="checkbox" id="lowercase" checked&gt;
+        &lt;/div&gt;
+        &lt;div class="setting"&gt;
+          &lt;label&gt;Include numbers&lt;/label&gt;
+          &lt;input type="checkbox" id="numbers" checked&gt;
+        &lt;/div&gt;
+        &lt;div class="setting"&gt;
+          &lt;label&gt;Include symbols&lt;/label&gt;
+          &lt;input type="checkbox" id="symbols" checked&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;button class="btn btn-large" id="generate"&gt;
+        Generate Password
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+
+
+                    <h2>CSS Code:</h2>
+                    <pre>
+                        <code class="codecss">
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b3b98;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: #23235b;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#result::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+                        </code>
+                    </pre>
+                    <h2>JavaScript</h2>
+                    <pre>
+                        <code class="codecss">
+const resultEl = document.getElementById('result')
+const lengthEl = document.getElementById('length')
+const uppercaseEl = document.getElementById('uppercase')
+const lowercaseEl = document.getElementById('lowercase')
+const numbersEl = document.getElementById('numbers')
+const symbolsEl = document.getElementById('symbols')
+const generateEl = document.getElementById('generate')
+const clipboardEl = document.getElementById('clipboard')
+
+const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
+}
+
+clipboardEl.addEventListener('click', () =&gt; {
+    const textarea = document.createElement('textarea')
+    const password = resultEl.innerText
+
+    if(!password) { return }
+
+    textarea.value = password
+    document.body.appendChild(textarea)
+    textarea.select()
+    document.execCommand('copy')
+    textarea.remove()
+    alert('Password copied to clipboard!')
+})
+
+generateEl.addEventListener('click', () =&gt; {
+    const length = +lengthEl.value
+    const hasLower = lowercaseEl.checked
+    const hasUpper = uppercaseEl.checked
+    const hasNumber = numbersEl.checked
+    const hasSymbol = symbolsEl.checked
+
+    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
+})
+
+function generatePassword(lower, upper, number, symbol, length) {
+    let generatedPassword = ''
+    const typesCount = lower + upper + number + symbol
+    const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item =&gt; Object.values(item)[0])
+    
+    if(typesCount === 0) {
+        return ''
+    }
+
+    for(let i = 0; i &lt; length; i += typesCount) {
+        typesArr.forEach(type =&gt; {
+            const funcName = Object.keys(type)[0]
+            generatedPassword += randomFunc[funcName]()
+        })
+    }
+
+    const finalPassword = generatedPassword.slice(0, length)
+
+    return finalPassword
+}
+
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+}
+
+function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+}
+
+function getRandomNumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+}
+
+function getRandomSymbol() {
+    const symbols = '!@#$%^&*(){}[]=&lt;&gt;/,.'
+    return symbols[Math.floor(Math.random() * symbols.length)]
+}
+                        </code>
+                    </pre>
+                </section>
+                
+            </div>
+        </section>
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script> 
+    </body>
+</html>

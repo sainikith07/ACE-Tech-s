@@ -1,0 +1,932 @@
+<!--OM-->
+<!--Jai Shree Ram-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACE Tech's</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8a26f48f96.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar-main">
+            <img src="images/logomain.jpg" alt="">
+            <div class="navigation">
+                <ul>
+                    <i id="memu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="courses.html">Courses</a></li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div> 
+        </nav>
+        <!-- Home -->
+        <section id="course-inner">
+            <div class="overview">
+                <img class="course-img" src="images/js.jpg" alt="">
+                <div class="course-head">
+                    <div class="c-name">
+                        <h2>JavaScript</h2>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comc">
+                            <pre>
+                                <code class="comcin">
+        JavaScript Can Change HTML Content
+One of many JavaScript HTML methods is getElementById().
+                                    
+                                </code>
+                            </pre>
+                            
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <h3>Faculy</h3>
+                <div class="tutor">
+                    <img src="images/younos.jpeg" alt="">
+                    <div class="tutor-det">
+                   <h6>Md Younus Shariff</h6>
+                   <p>
+                    Designation: Assistant Professor
+                    <br>Qualification: M.Tech
+                    <br>Experiance:	10 Years
+                    <br>Research Interests:	Machine Learning</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="comc">
+                    <pre>
+                        <code class="comcin">
+JavaScript Can Change HTML Content
+One of many JavaScript HTML methods is getElementById().
+
+The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to 
+"Hello JavaScript":
+
+Example
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+JavaScript accepts both double and single quotes:
+
+Example
+document.getElementById('demo').innerHTML = 'Hello JavaScript';
+JavaScript Can Change HTML Attribute Values
+In this example JavaScript changes the value of the src (source) attribute of an &lt;img&gt; tag:
+
+The Light Bulb
+Turn on the light  Turn off the light
+
+
+JavaScript Can Change HTML Styles (CSS)
+Changing the style of an HTML element, is a variant of changing an HTML attribute:
+
+Example
+document.getElementById("demo").style.fontSize = "35px";
+JavaScript Can Hide HTML Elements
+Hiding HTML elements can be done by changing the display style:
+
+Example
+document.getElementById("demo").style.display = "none";
+JavaScript Can Show HTML Elements
+Showing hidden HTML elements can also be done by changing the display style:
+
+Example
+document.getElementById("demo").style.display = "block";
+
+
+The &lt;script&gt; Tag
+In HTML, JavaScript code is inserted between &lt;script&gt; and &lt;/script&gt; tags.
+
+Example
+&lt;script&gt;
+document.getElementById("demo").innerHTML = "My First JavaScript";
+&lt;/script&gt;
+
+Old JavaScript examples may use a type attribute: &lt;script type="text/javascript"&gt;.
+The type attribute is not required. JavaScript is the default scripting language in HTML.
+
+JavaScript Functions and Events
+A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+For example, a function can be called when an event occurs, like when the user clicks a button.
+
+You will learn much more about functions and events in later chapters.
+
+JavaScript in &lt;head&gt; or &lt;body&gt;
+You can place any number of scripts in an HTML document.
+
+Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
+
+JavaScript in &lt;head&gt;
+In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.
+
+The function is invoked (called) when a button is clicked:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Demo JavaScript in Head&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+JavaScript in &lt;body&gt;
+In this example, a JavaScript function is placed in the &lt;body&gt; section of an HTML page.
+
+The function is invoked (called) when a button is clicked:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Body&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Placing scripts at the bottom of the &lt;body&gt; element improves the display speed, 
+because script interpretation slows down the display.
+
+External JavaScript
+Scripts can also be placed in external files:
+
+External file: myScript.js
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+External scripts are practical when the same code is used in many different web pages.
+
+JavaScript files have the file extension .js.
+
+To use an external script, put the name of the script file in the src (source) attribute of a &lt;script&gt; tag:
+
+Example
+&lt;script src="myScript.js"&gt;&lt;/script&gt;
+You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.
+
+The script will behave as if it was located exactly where the &lt;script&gt; tag is located.
+
+External scripts cannot contain &lt;script&gt; tags.
+
+External JavaScript Advantages
+Placing scripts in external files has some advantages:
+
+It separates HTML and code
+It makes HTML and JavaScript easier to read and maintain
+Cached JavaScript files can speed up page loads
+To add several script files to one page  - use several script tags:
+
+Example
+&lt;script src="myScript1.js"&gt;&lt;/script&gt;
+&lt;script src="myScript2.js"&gt;&lt;/script&gt;
+External References
+An external script can be referenced in 3 different ways:
+
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+This example uses a full URL to link to myScript.js:
+
+Example
+&lt;script src="https://www.w3schools.com/js/myScript.js"&gt;&lt;/script&gt;
+
+This example uses a file path to link to myScript.js:
+
+Example
+&lt;script src="/js/myScript.js"&gt;&lt;/script&gt;
+
+This example uses no path to link to myScript.js:
+
+Example
+&lt;script src="myScript.js"&gt;&lt;/script&gt;
+
+You can read more about file paths in the chapter HTML File Paths.
+
+
+
+JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+Using innerHTML
+To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My First Paragraph&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 5 + 6;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+
+Using document.write()
+For testing purposes, it is convenient to use document.write():
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+document.write(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Using document.write() after an HTML document is loaded, will delete all existing HTML:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+The document.write() method should only be used for testing.
+
+
+
+Using window.alert()
+You can use an alert box to display data:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+window.alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+You can skip the window keyword.
+
+In JavaScript, the window object is the global scope object. This means that variables, 
+properties, and methods by default belong to the window object. 
+This also means that specifying the window keyword is optional:
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;script&gt;
+alert(5 + 6);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Using console.log()
+For debugging purposes, you can call the console.log() method in the browser to display data.
+
+You will learn more about debugging in a later chapter.
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;script&gt;
+console.log(5 + 6);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+JavaScript Print
+JavaScript does not have any print object or print methods.
+You cannot access output devices from JavaScript.
+The only exception is that you can call the window.print() method in the browser to 
+print the content of the current window.
+
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;button onclick="window.print()"&gt;Print this page&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+JavaScript Values
+The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+Fixed values are called Literals.
+
+Variable values are called Variables.
+
+JavaScript Literals
+The two most important syntax rules for fixed values are:
+
+1. Numbers are written with or without decimals:
+
+10.50
+
+1001
+2. Strings are text, written within double or single quotes:
+
+"John Doe"
+
+'John Doe'
+
+
+JavaScript Variables
+In a programming language, variables are used to store data values.
+
+JavaScript uses the keywords var, let and const to declare variables.
+
+An equal sign is used to assign values to variables.
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+
+let x;
+x = 6;
+JavaScript Operators
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+
+(5 + 6) * 10
+JavaScript uses an assignment operator ( = ) to assign values to variables:
+
+let x, y;
+x = 5;
+y = 6;
+JavaScript Expressions
+An expression is a combination of values, variables, and operators, which computes to a value.
+
+The computation is called an evaluation.
+
+For example, 5 * 10 evaluates to 50:
+
+5 * 10
+Expressions can also contain variable values:
+
+x * 10
+The values can be of various types, such as numbers and strings.
+
+For example, "John" + " " + "Doe", evaluates to "John Doe":
+
+"John" + " " + "Doe"
+JavaScript Keywords
+JavaScript keywords are used to identify actions to be performed.
+
+The let keyword tells the browser to create variables:
+
+let x, y;
+x = 5 + 6;
+y = x * 10;
+The var keyword also tells the browser to create variables:
+
+var x, y;
+x = 5 + 6;
+y = x * 10;
+In these examples, using var or let will produce the same result.
+
+You will learn more about var and let later in this tutorial.
+
+JavaScript Comments
+Not all JavaScript statements are "executed".
+
+Code after double slashes // or between /* and */ is treated as a comment.
+
+Comments are ignored, and will not be executed:
+
+let x = 5;   // I will be executed
+
+// x = 6;   I will NOT be executed
+You will learn more about comments in a later chapter.
+
+JavaScript Identifiers / Names
+Identifiers are JavaScript names.
+
+Identifiers are used to name variables and keywords, and functions.
+
+The rules for legal names are the same in most programming languages.
+
+A JavaScript name must begin with:
+
+A letter (A-Z or a-z)
+A dollar sign ($)
+Or an underscore (_)
+Subsequent characters may be letters, digits, underscores, or dollar signs.
+
+Note
+Numbers are not allowed as the first character in names.
+
+This way JavaScript can easily distinguish identifiers from numbers.
+
+JavaScript is Case Sensitive
+All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables:
+
+let lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+JavaScript does not interpret LET or Let as the keyword let.
+
+JavaScript and Camel Case
+Historically, programmers have used different ways of joining multiple words into one variable name:
+
+Hyphens:
+
+first-name, last-name, master-card, inter-city.
+
+Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+
+Underscore:
+
+first_name, last_name, master_card, inter_city.
+
+Upper Camel Case (Pascal Case):
+
+FirstName, LastName, MasterCard, InterCity.
+
+Lower Camel Case:
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+firstName, lastName, masterCard, interCity.
+
+JavaScript Character Set
+JavaScript uses the Unicode character set.
+
+Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+
+For a closer look, please study our Complete Unicode Reference.
+
+avaScript Comments
+JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+Single Line Comments
+Single line comments start with //.
+
+Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+
+This example uses a single-line comment before each code line:
+
+Example
+// Change heading:
+document.getElementById("myH").innerHTML = "My First Page";
+
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+This example uses a single line comment at the end of each line to explain the code:
+
+Example
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 2;  // Declare y, give it the value of x + 2
+Multi-line Comments
+Multi-line comments start with /* and end with */.
+
+Any text between /* and */ will be ignored by JavaScript.
+
+This example uses a multi-line comment (a comment block) to explain the code:
+
+Example
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+in my web page:
+*/
+document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+It is most common to use single line comments.
+Block comments are often used for formal documentation.
+
+
+
+
+Variables are Containers for Storing Data
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const
+In this first example, x, y, and z are undeclared variables.
+
+They are automatically declared when first used:
+
+Example
+x = 5;
+y = 6;
+z = x + y;
+Note
+It is considered good programming practice to always declare variables before use.
+
+From the examples you can guess:
+
+x stores the value 5
+y stores the value 6
+z stores the value 11
+Example using var
+var x = 5;
+var y = 6;
+var z = x + y;
+Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+The var keyword should only be used in code written for older browsers.
+
+
+
+
+JavaScript Arithmetic Operators
+Arithmetic operators perform arithmetic on numbers (literals or variables).
+
+Operator	Description
++	Addition
+-	Subtraction
+*	Multiplication
+**	Exponentiation (ES2016)
+/	Division
+%	Modulus (Remainder)
+++	Increment
+--	Decrement
+Arithmetic Operations
+A typical arithmetic operation operates on two numbers.
+
+The two numbers can be literals:
+
+Example
+let x = 100 + 50;
+or variables:
+
+Example
+let x = a + b;
+or expressions:
+
+Example
+let x = (100 + 50) * a;
+Operators and Operands
+The numbers (in an arithmetic operation) are called operands.
+
+The operation (to be performed between the two operands) is defined by an operator.
+
+Operand	Operator	Operand
+100	+	50
+ADVERTISEMENT
+
+Adding
+The addition operator (+) adds numbers:
+
+Example
+let x = 5;
+let y = 2;
+let z = x + y;
+Subtracting
+The subtraction operator (-) subtracts numbers.
+
+Example
+let x = 5;
+let y = 2;
+let z = x - y;
+Multiplying
+The multiplication operator (*) multiplies numbers.
+
+Example
+let x = 5;
+let y = 2;
+let z = x * y;
+Dividing
+The division operator (/) divides numbers.
+
+Example
+let x = 5;
+let y = 2;
+let z = x / y;
+Remainder
+The modulus operator (%) returns the division remainder.
+
+Example
+let x = 5;
+let y = 2;
+let z = x % y;
+In arithmetic, the division of two integers produces a quotient and a remainder.
+
+In mathematics, the result of a modulo operation is the remainder of an arithmetic division.
+
+
+
+Example using let
+let x = 5;
+let y = 6;
+let z = x + y;
+Example using const
+const x = 5;
+const y = 6;
+const z = x + y;
+Mixed Example
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+The two variables price1 and price2 are declared with the const keyword.
+
+These are constant values and cannot be changed.
+
+The variable total is declared with the let keyword.
+
+The value total can be changed.
+
+When to Use var, let, or const?
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const
+
+5. Only use var if you MUST support old browsers.
+
+Just Like Algebra
+Just like in algebra, variables hold values:
+
+let x = 5;
+let y = 6;
+Just like in algebra, variables are used in expressions:
+
+let z = x + y;
+From the example above, you can guess that the total is calculated to be 11.
+
+Note
+Variables are containers for storing values.
+JavaScript Identifiers
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter.
+Names can also begin with $ and _ (but we will not use it in this tutorial).
+Names are case sensitive (y and Y are different variables).
+Reserved words (like JavaScript keywords) cannot be used as names.
+Note
+JavaScript identifiers are case-sensitive.
+
+The Assignment Operator
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+This is different from algebra. The following does not make sense in algebra:
+
+x = x + 5
+In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.
+
+(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
+
+Note
+The "equal to" operator is written like == in JavaScript.
+
+JavaScript Data Types
+JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+In programming, text values are called text strings.
+
+JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+Strings are written inside double or single quotes. Numbers are written without quotes.
+
+If you put a number in quotes, it will be treated as a text string.
+
+Example
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+Declaring a JavaScript Variable
+Creating a variable in JavaScript is called "declaring" a variable.
+
+You declare a JavaScript variable with the var or the let keyword:
+
+var carName;
+or:
+let carName;
+After the declaration, the variable has no value (technically it is undefined).
+
+To assign a value to the variable, use the equal sign:
+
+carName = "Volvo";
+You can also assign a value to the variable when you declare it:
+
+let carName = "Volvo";
+In the example below, we create a variable called carName and assign the value "Volvo" to it.
+
+Then we "output" the value inside an HTML paragraph with id="demo":
+
+Example
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+let carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+&lt;/script&gt;
+
+
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+
+Examples
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+Note
+A JavaScript variable can hold any type of data.
+
+The Concept of Data Types
+In programming, data types is an important concept.
+
+To be able to operate on variables, it is important to know something about the type.
+
+Without data types, a computer cannot safely solve this:
+
+let x = 16 + "Volvo";
+Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result?
+
+JavaScript will treat the example above as:
+
+let x = "16" + "Volvo";
+Note
+When adding a number and a string, JavaScript will treat the number as a string.
+
+Example
+let x = 16 + "Volvo";
+Example
+let x = "Volvo" + 16;
+JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+
+JavaScript:
+let x = 16 + 4 + "Volvo";
+Result:
+
+20Volvo
+JavaScript:
+let x = "Volvo" + 16 + 4;
+Result:
+
+Volvo164
+In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+
+In the second example, since the first operand is a string, all operands are treated as strings.
+
+Sorting an Array
+The sort() method sorts an array alphabetically:
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+ 
+        
+        
+        <!--Footer page-->
+        <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Our College Address</h3>
+                        <p>
+                            Telangana <br>
+                            Hyderabad <br>
+                            Ghatkesar <br>
+                        </p>
+                        <strong>Phone:</strong> +91 0000000000 <br>
+                        <strong>Email:</strong> acetechs@gmail.com <br>
+                    </div>   
+                </div>       
+            </div>
+            <hr>
+            <div class="container py-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>ACE Tech's</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Bharath&Nikith</a>
+              </div>
+            </div>
+        </footer>
+        <script>
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+        </script>
+
+         
+
+
+
+
+
+    </body>
+</html>
